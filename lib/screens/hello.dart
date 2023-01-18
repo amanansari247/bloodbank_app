@@ -30,15 +30,19 @@ class MyHomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                Container(
-                  child: Text("Task Time detals"),
+                 
+                Row(
+                  children: [
+                    Container(
+                      child: Text("Task Time detals"),
+                    ),
+                  ],
                 ),
                   
                 Container(
                   child: Text("Task name"),
                 )
-              )]),
+              ]),
               ),
                Container(
               
