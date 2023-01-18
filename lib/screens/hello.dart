@@ -7,34 +7,59 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              width: 80,
-              height: double.infinity,
-              color: Colors.red,
-              child: Text(
-                "I am red",
+        child: Container(
+          padding: EdgeInsets.only(top: 10),
+          child: Column(
+           
+            children: [
+              Container(
+              
+                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+               
+                width: MediaQuery.of(context).size.width,
+                height: 80,
+                decoration: BoxDecoration(
+                  color: Colors.teal.shade400,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                 border: Border.all(
+                  width: 1,
+                  color: Colors.yellow,
+                 )
+                ),
+               child:Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                Container(
+                  child: Text("Task Time detals"),
+                ),
+                  
+                Container(
+                  child: Text("Task name"),
+                )
+              )]),
               ),
-            ),
-            Container(
-              width: 80,
-              height: double.infinity,
-              color: Colors.blue,
-              child: Text(
-                "I am blue",
+               Container(
+              
+                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                color: Colors.teal.shade400,
+                width: MediaQuery.of(context).size.width,
+                height: 80,
+                
+               
               ),
-            ),
-            Container(
-              width: 80,
-              height: double.infinity,
-              color: Colors.green,
-              child: Text(
-                "I am green",
+               Container(
+              
+                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                color: Colors.teal.shade400,
+                width: MediaQuery.of(context).size.width,
+                height: 80,
+               
               ),
-            ),
+             
           ],
+          ),
         ),
       ),
     );
