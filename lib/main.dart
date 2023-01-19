@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
       ),
       title: 'Bllood Bank App',
-      home: const MyHomePage(),
+      home: const MyOnboardingPage(),
     );
   }
 }
