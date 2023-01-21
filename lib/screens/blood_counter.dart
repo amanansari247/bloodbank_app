@@ -20,7 +20,7 @@ class BloodCounterScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(18.0),
                 child: Text(
-                  "Sarita\nBlood\nBank",
+                  "Sarita Blood\nBank",
                   style: TextStyle(fontSize: 28, color: Colors.white),
                 ),
               ),
