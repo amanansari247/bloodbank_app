@@ -1,3 +1,4 @@
+import 'package:bloodbank_app/screens/blood_counter.dart';
 import 'package:bloodbank_app/screens/onboarding_screen.dart';
 import 'package:bloodbank_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
       ),
       title: 'Bllood Bank App',
-      home: const MyOnboardingPage(),
+      home: const BloodCounterScreen(),
     );
   }
 }
