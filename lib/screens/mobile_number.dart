@@ -18,16 +18,16 @@ class MobileNumber extends StatelessWidget {
             children: [
               //the enter number field
               Container(
-                color: Colors.red.shade100,
                 child: Column(
                   children: [
                     Container(
-                      color: Colors.green.shade100,
                       child: Text(
                         "Enter your mobile number",
                       ),
                     ),
                     Container(
+                      width: 265,
+                      margin: EdgeInsets.only(top: 15),
                       padding: EdgeInsets.fromLTRB(60, 14, 60, 17),
                       decoration: BoxDecoration(
                           border: Border.all(
@@ -40,6 +40,7 @@ class MobileNumber extends StatelessWidget {
                           )),
                       child: Text(
                         "+91",
+                        style: TextStyle(color: MyColors.redPrimary,fontSize: 18),
                       ),
                     ),
                   ],
