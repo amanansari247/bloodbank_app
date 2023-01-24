@@ -18,7 +18,33 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: MySplashScreen(),
+      title: 'Bllood Bank App',
+      theme: ThemeData(
+          // color shades
+          // accentColor: Colors.greenAccent,
+          primarySwatch: Colors.red,
+
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(
+                Colors.pink,
+              ),
+              padding: MaterialStateProperty.all(
+                  EdgeInsets.symmetric(horizontal: 20)),
+            ),
+          ),
+          textButtonTheme: TextButtonThemeData(
+            style: ButtonStyle(
+              // textStyle: MaterialStateProperty.all(
+              //   TextStyle(fontSize: 24),
+              // ),
+              padding: MaterialStateProperty.all(
+                  EdgeInsets.symmetric(horizontal: 20)),
+            ),
+          )
+          // buttonTheme:
+          ),
+      // home: SplashScreen(),
       initialRoute: '/',
       routes: {
         '/': (context) => MySplashScreen(),
