@@ -16,7 +16,7 @@ class OnboardingScreen2 extends StatelessWidget {
           onTap: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PhoneNumberScreen()),
+              MaterialPageRoute(builder: (context) => LoginScreen()),
             )
           },
           child: Container(

@@ -1,27 +1,24 @@
+import 'package:bloodbank_app/constants/routes.dart';
+import 'package:bloodbank_app/screens/onboarding/onboarding0.dart';
+import 'package:bloodbank_app/screens/onboarding_screen.dart';
+import 'package:bloodbank_app/widgets/onboarding_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'onboarding/onboarding0.dart';
-
-class MySplashScreen extends StatefulWidget {
-  const MySplashScreen({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  State<MySplashScreen> createState() => _MySplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _MySplashScreenState extends State<MySplashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
-  initState() {
-    // Future.delayed(
-    //   Duration(
-    //     seconds: 3,
-    //   ),
-    //   () =>
-    // Navigator.push(
-    //   context,
-    //   MaterialPageRoute(builder: (context) => MyOnboardingPage()),
-    // );
-    // );
+  void initState() {
+    Future.delayed(
+      Duration(seconds: 3),
+      () => Navigator.pushNamed(context, Routes.onboardingScreen),
+    );
+    // TODO: implement initState
     super.initState();
   }
 
@@ -29,15 +26,9 @@ class _MySplashScreenState extends State<MySplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: InkWell(
-          onTap: () => {
-            // navigation code here
-            Navigator.pushNamed(context, "/onboarding")
-          },
-          child: Center(
-            child: Image.asset(
-              "assets/bloodbank.png",
-            ),
+        child: Center(
+          child: Image.asset(
+            "assets/bloodbank.png",
           ),
         ),
       ),
