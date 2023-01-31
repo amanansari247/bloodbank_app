@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bllood Bank App',
+      title: 'Blood Bank App',
       theme: ThemeData(
           primarySwatch: Colors.red,
           elevatedButtonTheme: ElevatedButtonThemeData(
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
           // buttonTheme:
           ),
       // home: SplashScreen(),
-      initialRoute: Routes.signUpScreen,
+      initialRoute: Routes.home,
       routes: {
         Routes.splashScreen: (context) => SplashScreen(),
         Routes.onboardingScreen: (context) => OnboardingPage(),
