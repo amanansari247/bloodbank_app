@@ -81,7 +81,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         _formKey.currentState!.save();
 
                         // prefs.setString(key, value)
-
                         Navigator.pushNamed(context, Routes.home);
                       }
                     },
@@ -122,8 +121,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       newValue,
                     )
                   : prefs.setString(userDataFieldKey, ""),
-              print(userDataFieldKey),
-
+              print(
+                  " $userDataFieldKey is ${prefs.getString(userDataFieldKey)}"),
             },
             validator: (value) {
               if (value == null || value.isEmpty) {
